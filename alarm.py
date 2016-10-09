@@ -1,10 +1,11 @@
-from datetime import date
-from datetime import time
-from datetime import datetime
-from datetime import timedelta
+# from datetime import date
+# from datetime import time
+# from datetime import datetime
+# from datetime import timedelta
+import datetime
 
 def main():
-    var_integer = 76
-    print var_integer
+    currentSystemTime = datetime.datetime.now()
+    print currentSystemTime
 
 main()
