@@ -44,7 +44,7 @@ router.route('/bears')
     res.json({
       message: "received a GET request for bears"
     });
-  });
+  })
 
   // POST requests
   .post((req, res) => {
@@ -52,8 +52,6 @@ router.route('/bears')
       message: "received a POST request for bears"
     });
   });
-
-});
 
 // start and listen to the server
 app.listen(port);
