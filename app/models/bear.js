@@ -1,11 +1,11 @@
 // Bear model
 
 const mongoose = require('mongoose');
-const Schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
 // bear schema
 const BearSchema = new Schema({
-  name: String;
+  name: String
 });
 
 module.exports = mongoose.model('Bear', BearSchema);
