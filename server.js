@@ -21,3 +21,7 @@ router.get('/', () => {
 
 // register and prefix routes
 app.use('/api', router);
+
+// start and listen to the server
+app.listen(port);
+console.log('RESTful API servier @ localhost:8000');
