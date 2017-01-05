@@ -18,9 +18,16 @@ var port = process.env.PORT || 8000;
 
 // define routes for API
 var router = express.Router();
+
+router.get('/', (req, res, next) => {
+  console.log('received request to RESTful API');
+  // don't stop at current route
+  next();
+});
+
 router.get('/', (req, res) => {
   res.json({
-    message: "creating REST API"
+    message: "received a GET request"
   });
 });
 
