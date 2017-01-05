@@ -18,3 +18,6 @@ router.get('/', () => {
     message: "creating REST API"
   });
 });
+
+// register and prefix routes
+app.use('/api', router);
