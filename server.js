@@ -7,3 +7,6 @@ const bodyParser = require('body-parser');
 // parse html from POST
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
+// set server to run on port 8000
+var port = process.env.PORT || 8000;
