@@ -8,6 +8,11 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+// use mongoose to interact with database
+const mongoose = require('mongoose');
+// connect to MongoDB database
+mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o');
+
 // set server to run on port 8000
 var port = process.env.PORT || 8000;
 
