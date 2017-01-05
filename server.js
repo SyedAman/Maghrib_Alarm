@@ -13,7 +13,7 @@ var port = process.env.PORT || 8000;
 
 // define routes for API
 var router = express.Router();
-router.get('/', () => {
+router.get('/', (req, res) => {
   res.json({
     message: "creating REST API"
   });
