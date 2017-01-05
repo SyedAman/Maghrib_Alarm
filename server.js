@@ -10,3 +10,11 @@ app.use(bodyParser.json());
 
 // set server to run on port 8000
 var port = process.env.PORT || 8000;
+
+// define routes for API
+var router = express.Router();
+router.get('/', () => {
+  res.json({
+    message: "creating REST API"
+  });
+});
